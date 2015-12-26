@@ -1,5 +1,5 @@
 title:            Akshay Sawhney
-description:      I click photos.
+description:      A jekyll theme. Because I scribble.
 url:              # Site url, without a slash at the end.
 signoff:          # Your name.
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
@@ -15,7 +15,6 @@ links:
   - name:         GitHub
     url:          http://github.com/muan
     external:     true
-highlighter:      rouge
 permalink:        pretty
 markdown:         redcarpet
 redcarpet:
