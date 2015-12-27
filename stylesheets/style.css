@@ -6,7 +6,7 @@ html, body {
 
 body {
   background-color: #E7E8E2;
-  background-image: url('/_assets/grain_7.png');
+  background-image: url('{{site.baseurl}}{{site.url}}/_assets/grain_7.png');
   color: #303030;
   font-family: 'Open Sans', sans-serif;
   /*font-family: 'Unica One';*/
