@@ -7,7 +7,7 @@ title: Posts
   {% for post in site.posts %}
   <li>
     <small class="datetime muted" data-time="{{ post.date }}">{{ post.date | date_to_string }} </small>
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ site.baseurl }}{{ site.url }}{{ post.url }}">{{ post.title }}</a>
   </li>
   {% endfor %}
 </ul>
