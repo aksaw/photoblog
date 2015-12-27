@@ -9,7 +9,7 @@ layout: index
         <section class='post'>
           <h1 class="upcase">
             <div class='date'>{{ post.date | date_to_string }}</div>
-            {{ post.title }}
+            <a href="{{ site.baseurl }}{{ site.url }}{{ post.url }}">{{ post.title }}</a>
           </h1>
           {{ post.content }}
         </section>
