@@ -80,15 +80,21 @@ blockquote {
 header {
   text-align: center; }
 
-footer {
+.footer {
   width: 100%;
   max-width: 600px;
   line-height: 2em;
   margin: auto;
   padding-bottom: 30px;
   text-align: center; }
-  footer * {
-    color: #797979; }
+  .footer a {
+    opacity: 0.5; }
+  .footer a:hover {
+    opacity: 0.9;
+    color: #464646;
+  }
+  /*footer * {
+    color: #797979; }*/
 
 #container {
   *zoom: 1;
@@ -359,12 +365,17 @@ img {
   left: 50%;
   font-size: 60px; }
 .paging .left {
-  margin-left: -340px; }
+  margin-left: -480px; }
 .paging .right {
-  margin-left: 320px; }
+  margin-left: 460px; }
 
 .title {
   font-family: "Unica One";
-  font-size: 50;
+  font-size: 60;
   font-weight: bold
+}
+
+.subtitle {
+  font-family: "Vollkorn";
+  font-size: 14;
 }
