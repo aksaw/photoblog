@@ -1,5 +1,6 @@
-title:            Akshay Sawhney
-description:      A jekyll theme. Because I scribble.
+title:            Working Title
+subtitle:         I click photos.
+description:      This is my photoblog.
 url:              # Site url, without a slash at the end.
 signoff:          # Your name.
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
@@ -9,15 +10,16 @@ google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 baseurl:          /photoblog
 
 links:
-  - name:         About
-    url:          /about
-  - name:         Blog
-    url:          http://muan.co
-    external:     true
-  - name:         GitHub
-    url:          http://github.com/muan
-    external:     true
-permalink:        pretty
+  - name:         Posts
+    url:          /posts.html
+    icon:         view_list
+  - name:         Stream
+    url:          /
+    icon:         view_stream
+  - name:         Gallery
+    url:          /gallery.html
+    icon:         view_module
+permalink:        none
 markdown:         redcarpet
 redcarpet:
   extensions:

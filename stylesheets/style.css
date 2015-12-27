@@ -5,9 +5,11 @@ html, body {
   height: 100%; }
 
 body {
-  background: #f9f9f9;
+  background-color: #E7E8E2;
+  background-image: url('/assets/grain_7.png');
   color: #303030;
   font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Unica One';*/
   font-weight: 400;
   font-size: 13px;
   line-height: 19px;
@@ -95,7 +97,7 @@ footer {
   box-sizing: border-box;
   width: 100%;
   max-width: 600px;
-  background: #fff;
+  background: #FBFCF5;
   margin: 40px auto 20px;
   border-radius: 7px;
   border: 1px solid #eee;
@@ -145,9 +147,9 @@ footer {
   padding: 30px 60px;
   margin: auto; }
 
-a, .as-link {
+a, a.main, .as-link {
   text-decoration: none;
-  color: #269;
+  color: #464646;
   line-height: 1.4em;
   display: inline-block;
   vertical-align: baseline;
@@ -159,7 +161,7 @@ a, .as-link {
   -ms-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s; }
-  a.main, a:hover, .as-link.main, .as-link:hover {
+  a:hover, .as-link.main, .as-link:hover {
     color: #1d5884;
     background-image: url(/images/line.png);
     background-repeat: repeat-x;
@@ -360,3 +362,9 @@ img {
   margin-left: -340px; }
 .paging .right {
   margin-left: 320px; }
+
+.title {
+  font-family: "Unica One";
+  font-size: 50;
+  font-weight: bold
+}

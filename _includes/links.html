@@ -1,9 +1,9 @@
 <div class="block">
   {% for link in site.links %}
-    <a target="{% if link.external %}_blank{% else %}_top{% endif %}"
+    <a target="_top"
        class="main" 
-       href="{% unless link.external %}{{ site.baseurl }}{{ site.url }}{% endunless %}{{ link.url }}">
-       {{ link.name }}
+       href="{{ site.url }}{{ link.url }}">
+       <i class="material-icons">{{ link.icon }}</i>
      </a>
   {% endfor %}
 </div>
