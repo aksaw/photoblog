@@ -2,7 +2,7 @@
   {% for link in site.links %}
     <a target="_top"
        class="main" 
-       href="{{ site.url }}{{ link.url }}">
+       href="{{ site.baseurl }}{{ site.url }}{{ link.url }}">
        <i class="material-icons">{{ link.icon }}</i>
      </a>
   {% endfor %}
