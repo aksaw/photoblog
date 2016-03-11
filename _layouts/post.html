@@ -3,16 +3,17 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
+  <!--header class="post-header">
     <img src="/assets/portrait.jpg", align="middle">
     <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
     <h2 class="post-title" itemprop="name headline">{{ page.subtitle }}</h2>
-    <!--p class="post-meta">
+    <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-    </p-->
-  </header>
+    </p>
+  </header-->
 
   <div class="post-content" itemprop="articleBody">
+    <h3 class="upcase">{{ page.title }} <font color="#999"> {{ page.subtitle }}</font> </h3>
     {{ content }}
   </div>
 

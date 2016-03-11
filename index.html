@@ -6,17 +6,28 @@ layout: default
   {% for post in site.posts %}
   <li>
     <div class="content">
-        <section class='post'>
-          <h2 class="upcase">
-            <!--div class='date'>{{ post.date | date_to_string }}</div-->
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <font color="#BBBBBB"> {{ post.subtitle }}</font> </a>
+        <!--section class='post'-->
+          <!--h3 class="upcase">
+            <div class='date'>{{ post.date | date_to_string }}</div>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <font color="#999"> {{ post.subtitle }}</font> </a>
 
-          </h2>
-          {{ post.content }}
-        </section>
+          </h3-->
+          <!--{{ post.content }}-->
+
+        <!--/section-->
+        <div class="hovereffect">
+          <img src={{ post.thumbnail }}>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <div class="overlay">
+              <p>
+                {{post.title}}<br>
+                {{post.subtitle}}
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
   </li>
-  <hr>
   {% endfor %}
 </ul>
 
