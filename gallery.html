@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<center>
+  <h2>GALLERY</h2>
+</center>
+
+<p>
+
+<section id="photos">
+
+{% for post in site.posts %}
+  {% for photo in post.photos %}
+
+    <img src="{{ photo.url }}">
+
+  {% endfor %}
+{% endfor %}
+
+</section>
+
+<hr class="header">
