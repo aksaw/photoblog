@@ -4,12 +4,11 @@ html{
 
 body {
   /*background-color: #EEEFF7;*/
-  background-color:#EEEEEE;
+  background-color:#F5F5F5;
   padding:50px;
   font: 14px/1.5  "Vollkorn", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,13 +30,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:36px;
+  font-size:38px;
   /*color: #1C1D21;*/
   color: #444;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 36px;
   /*color:#393939;*/
   color:#444;
 }
@@ -45,6 +44,12 @@ h2 {
 h3 {
   font-family: "Unica One";
   font-size: 24px;
+  color: #fff;
+}
+
+h4 {
+  font-family: "Unica One";
+  font-size: 19px;
   color: #fff;
 }
 
@@ -194,7 +199,7 @@ header ul a strong {
 }
 
 section {
-  width:700px;
+  width:740px;
   float:left;
   padding-bottom:50px;
 }
@@ -203,7 +208,8 @@ small {
   font-size:11px;
 }
 
-hr{
+/*hr*/
+.header{
     border: 0;
     height: 2px;
     width: 185px;
@@ -211,7 +217,13 @@ hr{
     background: #666;
 }
 
+/*ul*/
+.archive{
+  text-align: center;
+}
+
 footer {
+  background-color: #F5F5F5;
   width:270px;
   float:right;
   position:fixed;
@@ -222,40 +234,14 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 960px) {
-
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
-
-  header {
-    padding-right:320px;
-  }
-
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
-  }
-
-  header a small {
-    display:inline;
-  }
-
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
+.navigation {
+  float: left;
+  position: fixed;
+  padding-left: 30px;
+  text-align: right;
 }
+
+
 
 
 /*hover effect*/
@@ -287,7 +273,6 @@ footer {
 }
 
 .overlay{
-  font-size:36px;
   color:#fff;
   font-family: "Unica One";
 }
@@ -372,16 +357,61 @@ footer {
   width: 200px;
   margin:0 auto;
   text-align: center;
+  padding-top: 5px;
 }
 
 
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
+/**/
+
+@media print, screen and (max-width: 960px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
   }
 
   header {
     padding:0;
+    margin-left: 0px;
+  }
+
+  /*header {
+    padding-right:320px;
+  }*/
+
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+
+  header a small {
+    display:inline;
+  }
+
+  /*header ul {
+    position:absolute;
+    right:50px;
+    top:52px;
+  }*/
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    /*word-wrap:break-word;*/
+  }
+
+  header {
+    padding:0;
+    margin-left: 0px;
+    float:left;
   }
 
   header ul, header p.view {
@@ -412,5 +442,55 @@ footer {
     padding:0.4in;
     font-size:12pt;
     color:#444;
+  }
+}
+
+
+/*GALLERY GRID*/
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 1;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   4px;
+  -moz-column-count:    3;
+  -moz-column-gap:      4px;
+  column-count:         3;
+  column-gap:           4px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
   }
 }
