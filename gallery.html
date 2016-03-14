@@ -2,22 +2,35 @@
 layout: default
 ---
 
-<center>
+<!--center>
   <h2>GALLERY</h2>
 </center>
 
-<p>
+<!--p-->
 
 <section id="photos">
+  
+  <h1 id="gallery">GALLERY</h1>
 
-{% for post in site.posts %}
-  {% for photo in post.photos %}
+  {% for post in site.posts %}
+    {% for photo in post.photos %}
 
-    <img src="{{ photo.url }}">
+    <a href="#img_{{ photo.url }}">
+      <img src="{{ photo.url }}">
+    </a>
 
+    {% endfor %}
   {% endfor %}
-{% endfor %}
 
 </section>
 
 <hr class="header">
+
+<!-- lightbox container hidden with CSS -->
+{% for post in site.posts %}
+  {% for photo in post.photos %}
+    <a href="#_" class="lightbox" id="img_{{ photo.url }}">
+      <img src="{{ photo.url }}">
+    </a>
+  {% endfor %}
+{% endfor %}
