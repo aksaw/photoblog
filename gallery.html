@@ -1,36 +1,25 @@
 ---
 layout: default
+title: Gallery | Here, There & Everywhere
 ---
 
 <!--center>
-  <h2>GALLERY</h2>
-</center>
+  <h2> GALLERY </h2>
+  <p>
+  <h3> ALL · STREET · NATURE · ABSTRACT</h3>
+  <p>
+</center-->
 
-<!--p-->
 
 <section id="photos">
-  
-  <h1 id="gallery">GALLERY</h1>
 
   {% for post in site.posts %}
     {% for photo in post.photos %}
 
-    <a href="#img_{{ photo.url }}">
-      <img src="{{ photo.url }}">
-    </a>
+    <a href="{{ photo.url }}" data-lightbox="gallery" rel="lightbox"><img src="{{ photo.url }}" class="gallery"></a>
 
     {% endfor %}
   {% endfor %}
 
 </section>
 
-<hr class="header">
-
-<!-- lightbox container hidden with CSS -->
-{% for post in site.posts %}
-  {% for photo in post.photos %}
-    <a href="#_" class="lightbox" id="img_{{ photo.url }}">
-      <img src="{{ photo.url }}">
-    </a>
-  {% endfor %}
-{% endfor %}

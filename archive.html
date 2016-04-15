@@ -1,17 +1,17 @@
 ---
 layout: default
+title: Archive | Here, There & Everywhere
 ---
 
-<center>
-  <h2>ARCHIVE</h2>
+<!--center>
+  <h2> ARCHIVE </h2>
 </center>
-<p>
+<p-->
+<p><p>
 <ul>
   {% for post in site.posts %}
-  <li class="archive">
-      <h3 class="upcase">
+    <h3 class="upcase center-text">
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <font color="#999"> {{ post.subtitle }}</font> </a>
-      </h3>
-  </li>
+    </h3>
   {% endfor %}
 </ul>
