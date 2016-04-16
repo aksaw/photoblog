@@ -132,7 +132,7 @@ footer {
   color: #AAA
 }
 
-img.gallery:hover {
+img.hover-fade:hover {
     opacity: 0.95;
     filter: alpha(opacity=95); /* For IE8 and earlier */
 }
