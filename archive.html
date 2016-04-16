@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Archive | Here, There & Everywhere
+title: Archive
 ---
 
 <!--center>
@@ -11,7 +11,7 @@ title: Archive | Here, There & Everywhere
 <ul>
   {% for post in site.posts %}
     <h3 class="upcase center-text">
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <font color="#999"> {{ post.subtitle }}</font> </a>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a>
     </h3>
   {% endfor %}
 </ul>

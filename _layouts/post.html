@@ -5,7 +5,7 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     
-    <h3 class="upcase center-text">{{ page.title }} <font color="#999"> {{ page.subtitle }}</font> </h3>
+    <h3 class="upcase center-text">{{ page.title }} <span class="grey"> {{ page.subtitle }}</span> </h3>
     <div class="post-description">{{ page.description }}</div>
     
     {{ content }}
@@ -13,3 +13,41 @@ layout: default
   </div>
 
 </article>
+
+<hr class='hr-bottom'>
+
+<div class="others">
+<script type="text/javascript">
+
+    var randomIndexUsed = [];
+    var counter = 0;
+    var numberOfPosts = 3;
+
+    while (counter < numberOfPosts)
+    {
+        var randomIndex;
+        var postHREF;
+        var postTitle;
+        var postSubtitle;
+        var postThumbnail;
+
+        randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+        if (randomIndexUsed.indexOf(randomIndex) == "-1")
+        {
+            postHREF = postsHREF[randomIndex];
+            postTitle = postsTitle[randomIndex];
+            postSubtitle = postsSubtitle[randomIndex];
+            postThumbnail = postsThumbnail[randomIndex];
+
+            document.write('<div class="other-post">')
+            document.write('<a href="' + postHREF + '"><img class="small-thumbnail" src="' + postThumbnail + '">');
+            document.write('<br>' + postTitle + ', ' + postSubtitle + '</a></div>')
+
+            randomIndexUsed.push(randomIndex);
+            counter++;
+        }
+    }
+
+</script>
+</div>

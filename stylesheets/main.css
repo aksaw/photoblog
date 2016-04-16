@@ -5,7 +5,7 @@ html{
 body {
   background-color:#FCFCFC;
   padding:35px;
-  font: 14px/1.5  "Vollkorn", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5  "Vollkorn", "Times New Roman", serif;
   color:#727272;
   font-weight:400;
 }
@@ -30,29 +30,21 @@ h1, h2, h3 {
 
 h1 {
   font-size:38px;
-  /*color: #1C1D21;*/
 }
 
 h2 {
   font-size: 36px;
-  /*color:#393939;*/
 }
 
 h3 {
   font-family: "Unica One";
   font-size: 24px;
-  color: #fff;
+  padding: 2px;
 }
 
 h4 {
   font-family: "Unica One";
   font-size: 19px;
-  color: #fff;
-}
-
-h3, h4, h5, h6 {
-  /*color:#494949;*/
-  color: #444;
 }
 
 a {
@@ -64,16 +56,14 @@ a:hover {
   color:#069;
 }
 
+img {
+  max-width:100%;
+}
 
 .wrapper {
   /*width:840px;*/
   width:1000px;
   margin:0 auto;
-}
-
-
-img {
-  max-width:100%;
 }
 
 header {
@@ -100,17 +90,21 @@ footer {
   /*margin-left: 550px;*/
   margin-left: 750px;
   text-align:center;
-  bottom:5px;
+  bottom:20px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
 /*hr*/
-.header{
+.hr-header{
     border: 0;
     height: 2px;
     width: 185px;
     align: center;
     background: #666;
+}
+
+.hr-bottom {
+  margin:25px 0 25px 0;
 }
 
 .center-text{
@@ -123,7 +117,7 @@ footer {
 
 .post-description {
   text-align: center;
-  padding-top: 5px;
+  padding-top: 4px;
   padding-bottom: 12px;
 }
 
@@ -134,10 +128,29 @@ footer {
   padding-top: 5px;
 }
 
+.grey {
+  color: #AAA
+}
 
 img.gallery:hover {
     opacity: 0.95;
     filter: alpha(opacity=95); /* For IE8 and earlier */
+}
+
+
+.others {
+  text-align: center;
+}
+
+.other-post {
+  max-width: 32%;
+  display: inline-block;
+  padding: 6px;
+  vertical-align: top
+}
+
+.small-thumbnail {
+  height: 11em;
 }
 
 
