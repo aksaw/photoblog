@@ -41,7 +41,7 @@ layout: default
             postThumbnail = postsThumbnail[randomIndex];
 
             document.write('<div class="other-post">')
-            document.write('<a href="' + postHREF + '"><img class="small-thumbnail" src="' + postThumbnail + '">');
+            document.write('<a href="{{ site.baseurl }}' + postHREF + '"><img class="small-thumbnail" src="' + postThumbnail + '">');
             document.write('<br>' + postTitle + ', ' + postSubtitle + '</a></div>')
 
             randomIndexUsed.push(randomIndex);
