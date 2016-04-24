@@ -1,0 +1,17 @@
+---
+layout: default
+title: Archive
+---
+
+<!--center>
+  <h2> ARCHIVE </h2>
+</center>
+<p-->
+<p><p>
+<ul>
+  {% for post in site.posts %}
+    <h3 class="upcase center-text">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a>
+    </h3>
+  {% endfor %}
+</ul>

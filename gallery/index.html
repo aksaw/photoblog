@@ -1,0 +1,27 @@
+---
+layout: default
+title: Gallery
+---
+
+<!--center>
+  <h2> GALLERY </h2>
+  <p>
+  <h3> ALL · STREET · NATURE · ABSTRACT</h3>
+  <p>
+</center-->
+
+
+<section id="photos">
+
+  {% for post in site.posts %}
+    {% for photo in post.photos %}
+
+    <a href="{{ photo.url }}" data-lightbox="gallery" rel="lightbox">
+      <img src="{{ photo.url }}" class="hover-fade">
+    </a>
+
+    {% endfor %}
+  {% endfor %}
+
+</section>
+
