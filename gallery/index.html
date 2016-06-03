@@ -3,25 +3,69 @@ layout: default
 title: Gallery
 ---
 
-<!--center>
-  <h2> GALLERY </h2>
-  <p>
-  <h3> ALL · STREET · NATURE · ABSTRACT</h3>
-  <p>
-</center-->
+<section>
 
+  <div class="filter-button-group">
+    <button data-filter="*">  ALL  </button>
+    <button data-filter=".nature">NATURE</button>
+    <button data-filter=".street">STREET</button>
+    <button data-filter=".portrait">PORTRAIT</button>
+    <button data-filter=".abstract">ABSTRACT</button>
+  </div>
 
-<section id="photos">
+  <div class='grid'>
 
-  {% for post in site.posts %}
-    {% for photo in post.photos %}
+    {% for post in site.posts %}
+      {% for photo in post.photos %}
 
-    <a href="{{ photo.url }}" data-lightbox="gallery" rel="lightbox">
-      <img src="{{ photo.url }}" class="hover-fade">
-    </a>
+      <div class = "grid-item {{ photo.categories }}">
+        <a href="{{ photo.url }}" data-lightbox="gallery" rel="lightbox">
+          <img src="{{ photo.url }}" class="hover-fade">
+        </a>
+      </div>
 
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
+  </div>
 
 </section>
 
+<script src="{{ site.baseurl }}/javascripts/lightbox-plus-jquery.js"></script>
+<script>
+  lightbox.option({'disableScrolling':true, 'showImageNumberLabel':false})
+</script>
+
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/javascripts/packery-mode.pkgd.min.js"></script>
+<script> 
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    //layoutMode: 'packery',
+    itemSelector: '.grid-item',
+    transitionDuration: '0.8s',
+    stagger: '0.04s',
+    // disable scale transform transition when hiding
+    /*hiddenStyle: {
+      opacity: 0
+    },
+    visibleStyle: {
+      opacity: 1
+    }*/
+  });
+  
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+  });
+
+  // reveal all items after init
+  var iso = $grid.data('isotope');
+  $grid.isotope( 'reveal', iso.items );
+
+  // filter items on button click
+  $('.filter-button-group').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter:   filterValue });
+  });
+</script>

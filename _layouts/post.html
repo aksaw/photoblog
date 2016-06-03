@@ -17,7 +17,11 @@ layout: default
 <hr class='hr-bottom'>
 
 <div class="others">
-<script type="text/javascript">
+  <script type="text/javascript">
+    var postsHREF = [{% for post in site.posts %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+    var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+    var postsSubtitle = [{% for post in site.posts %}"{{ post.subtitle }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+    var postsThumbnail = [{% for post in site.posts %}"{{ post.thumbnail }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
 
     var randomIndexUsed = [];
     var counter = 0;
@@ -41,7 +45,7 @@ layout: default
             postThumbnail = postsThumbnail[randomIndex];
 
             document.write('<div class="other-post">')
-            document.write('<a href="{{ site.baseurl }}/' + postHREF + '"><img class="small-thumbnail" src="' + postThumbnail + '">');
+            document.write('<a href="{{ site.baseurl }}' + postHREF + '"><img class="small-thumbnail" src="' + postThumbnail + '">');
             document.write('<br>' + postTitle + ', ' + postSubtitle + '</a></div>')
 
             randomIndexUsed.push(randomIndex);
@@ -49,5 +53,5 @@ layout: default
         }
     }
 
-</script>
+  </script>
 </div>
