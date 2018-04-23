@@ -1,19 +1,26 @@
 <header>
-  <img src="{{site.baseurl}}/assets/portrait.png" align="middle"> 
+  <!--img src="{{site.baseurl}}/assets/portrait.png" align="middle"--> 
 
-  <hr class="hr-header">
   <h1 id="header1">HERE,THERE &</h1>
   <h1 id="header2">EVERYWHERE</h1>
-  <hr class="hr-header">
-
-  <h4>
-    <a href="{{site.baseurl}}/">HOME</a> · 
-    <a href="{{site.baseurl}}/archive">ARCHIVE</a> · 
-    <a href="{{site.baseurl}}/gallery">GALLERY</a>
-  </h4>
   
   <div class="aboutme">
-   Blah blah, lorem ipsum. This is the website description. More blah, some bleh as well. 
+   Blah blah, lorem ipsum. This is the website description.
   </div>
+
+  <!-- TEMPORARY -->
+  <br>
+  <h3>PROJECTS</h3>
+  <!-- <hr class="hr-header"> -->
+  <!-- <h4> -->
+  {% for post in site.posts %}
+  <!-- <ul> -->
+    <!-- <h3 class="upcase"> -->
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a><br>
+    <!-- </h3> -->
+  <!-- </ul> -->
+  {% endfor %}
+  <!-- </h4> -->
+  <!-- TEMPORARY -->
 
 </header>
