@@ -1,5 +1,4 @@
 <header>
-  <!--img src="{{site.baseurl}}/assets/portrait.png" align="middle"--> 
 
   <h1 id="header1">HERE,THERE &</h1>
   <h1 id="header2">EVERYWHERE</h1>
@@ -9,14 +8,14 @@
   </div>
 
   <!-- TEMPORARY -->
-  <br>
-  <h3>PROJECTS</h3>
+  <p>
+  <h3>PROJECTS</h3><P>
   <!-- <hr class="hr-header"> -->
   <!-- <h4> -->
   {% for post in site.posts %}
   <!-- <ul> -->
     <!-- <h3 class="upcase"> -->
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a><br>
+          <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a></p>
     <!-- </h3> -->
   <!-- </ul> -->
   {% endfor %}
