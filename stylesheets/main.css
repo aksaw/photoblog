@@ -65,8 +65,8 @@ img {
 }
 
 .wrapper {
-  /*width:1020px;*/
-  width: 80%;
+  width:1020px;
+  /*width: 80%;*/
   margin:0 auto;
   /*margin-left: auto;*/
   /*margin-right: auto;*/
@@ -79,8 +79,8 @@ header {
   float:right;
   position:fixed;
   text-align: left;
-  margin-left: 560px;
-  /*margin-left: 765px;*/
+  /*margin-left: 560px;*/
+  margin-left: 765px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
