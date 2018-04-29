@@ -74,13 +74,12 @@ img {
 
 header {
   width:200px;
-  padding-left:50px;
   /*width: 18%;*/
   float:right;
   position:fixed;
   text-align: left;
   /*margin-left: 560px;*/
-  margin-left: 765px;
+  margin-left: 795px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -93,11 +92,11 @@ section {
 
 footer {
   background-color: #FCFCFC;
-  width:260px;
+  width:200px;
   float:right;
   position:fixed;
   /*margin-left: 550px;*/
-  margin-left: 765px;
+  margin-left: 795px;
   text-align:center;
   bottom:20px;
   -webkit-font-smoothing:subpixel-antialiased;
