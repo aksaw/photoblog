@@ -1,0 +1,18 @@
+<header>
+
+  <h1 id="header">AKSHAY</h1>
+  <h1 id="header">SAWHNEY</h1>
+  <br>
+  <b>Photo</b>
+  {% for post in site.posts %}
+    <br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a>
+  {% endfor %}
+  <br><br>
+  <b>Music</b>
+  {% for post in site.music %}
+    <br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a>
+  {% endfor %}
+  <br><br>
+  <b>Info</b>
+  <br><a href="{{ site.baseurl }}/about.html">About</a>
+</header>

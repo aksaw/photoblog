@@ -5,7 +5,7 @@ html{
 body {
   background-color:#FCFCFC;
   padding:35px;
-  font: 14px/1.5  "Vollkorn", "Times New Roman", serif;
+  font: 12px/1.8  "Noto Serif", serif;
   color:#727272;
   font-weight:400;
 }
@@ -16,23 +16,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: "Oswald";
+  font-family:"league-gothic";
+  font-weight: 400;
+  font-style: normal;
 }
 
-#header1 {
-  font-size: 36px;
-}
-
-#header2 {
-  font-size:38px;
+#header {
+  font-size: 38px;
 }
 
 p, ul, ol, pre {
   margin:0 0 20px;
-}
-
-ul {
-  list-style-type: none;
 }
 
 h1, h2, h3 {
@@ -56,7 +50,7 @@ a {
 }
 
 a:hover {
-  color:#069;
+  color:#777;
 }
 
 img {
@@ -65,7 +59,7 @@ img {
 }
 
 .wrapper {
-  width:1020px;
+  width:750px;
   /*width: 80%;*/
   margin:0 auto;
   /*margin-left: auto;*/
@@ -73,18 +67,18 @@ img {
 }
 
 header {
-  width:200px;
+  width:180px;
   /*width: 18%;*/
   float:right;
   position:fixed;
   text-align: left;
   /*margin-left: 560px;*/
-  margin-left: 795px;
+  margin-left: 540px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
 section {
-  width:760px;
+  width:500px;
   /*width: 75%;*/
   float:left;
   padding-bottom:50px;
@@ -106,8 +100,10 @@ footer {
 .hr-header{
     border: 0;
     height: 2px;
-    width: 185px;
-    align: center;
+    width: 180px;
+    /*align: left;*/
+    margin-left:0;
+    margin-top: 20px;
     background: #666;
 }
 
@@ -297,7 +293,7 @@ button:hover {
 /* Gallery Grid */
 .grid-item {
   float: left;
-  width: 32%;
+  width: 48%;
   padding: 5px;
 }
 
