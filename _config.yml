@@ -12,3 +12,5 @@ google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
 markdown:         kramdown
 
+
+theme: jekyll-theme-minimal
