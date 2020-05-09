@@ -1,44 +1,16 @@
 ---
 layout: default
+photos: 
+  - url: https://live.staticflickr.com/65535/49303184286_412e5943a5_b.jpg
+  - url: https://live.staticflickr.com/65535/49303395892_be3d97b9bd_b.jpg
+  - url: https://live.staticflickr.com/65535/49303184821_dbedf91511_b.jpg
+  - url: https://live.staticflickr.com/65535/49302698823_4a31599f07_b.jpg
 ---
 
-<!-- <ul class="posts">
-  {% for post in site.posts %}
-  <li>
-    <div class="content">
-      
-      <div class="hovereffect">
-        <img src={{ post.thumbnail }}>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <div class="overlay">
-            <p>
-              {{post.title}}<br>
-              {{post.subtitle}}
-            </p>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </li>
-  {% endfor %}
-</ul> -->
-
 <section>
+  <div class='grid'>
 
-<!--   <div class="filter-button-group">
-    <button data-filter="*">  ALL  </button>
-    <button data-filter=".nature">NATURE</button>
-    <button data-filter=".street">STREET</button>
-    <button data-filter=".portrait">PORTRAIT</button>
-    <button data-filter=".abstract">ABSTRACT</button>
-  </div> -->
-
-
-  <!-- <div class='grid'>
-
-    {% for post in site.posts %}
-      {% for photo in post.photos %}
+      {% for photo in page.photos %}
 
       <div class = "grid-item {{ photo.categories }}">
         <a href="{{ photo.url }}" data-lightbox="gallery" rel="lightbox">
@@ -47,8 +19,7 @@ layout: default
       </div>
 
       {% endfor %}
-    {% endfor %}
-  </div> -->
+  </div>
 
 </section>
 
@@ -66,7 +37,7 @@ layout: default
     // layoutMode: 'masonry',
     itemSelector: '.grid-item',
     transitionDuration: '0.8s',
-    stagger: '0.04s',
+    // stagger: '0.04s',
     // disable scale transform transition when hiding
     hiddenStyle: {
       opacity: 0
@@ -85,9 +56,4 @@ layout: default
   var iso = $grid.data('isotope');
   $grid.isotope( 'reveal', iso.items );
 
-  // filter items on button click
-  // $('.filter-button-group').on( 'click', 'button', function() {
-  //   var filterValue = $(this).attr('data-filter');
-  //   $grid.isotope({ filter:   filterValue });
-  // });
 </script>
