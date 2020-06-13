@@ -59,7 +59,7 @@ img {
 }
 
 .wrapper {
-  width:750px;
+  width:840px;
   /*width: 80%;*/
   margin:0 auto;
   /*margin-left: auto;*/
@@ -73,12 +73,12 @@ header {
   position:fixed;
   text-align: left;
   /*margin-left: 560px;*/
-  margin-left: 540px;
+  margin-left: 660px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
 section {
-  width:500px;
+  width:620px;
   /*width: 75%;*/
   float:left;
   padding-bottom:50px;
