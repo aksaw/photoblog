@@ -115,6 +115,13 @@ footer {
   text-align: center;
 }
 
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
+}
+
 .upcase {
   text-transform: uppercase;
 }

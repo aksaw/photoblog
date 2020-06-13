@@ -25,9 +25,14 @@ title: Marks of Existence
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence12.jpg"></div>
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence13.jpg"></div>
 </div>
-01 IMPERMANENCE
-<button class="prev01"> < </button>
-<button class="next01"> > </button>
+<h4>
+  01 IMPERMANENCE
+  <div class="align-right">
+    <button class="prev01"> < </button>
+    <button class="next01"> > </button>
+  </div>
+</h4>
+<p>
 
 <div class="siema02">
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering00.jpg"></div>
@@ -38,9 +43,14 @@ title: Marks of Existence
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering05.jpg"></div>
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering06.jpg"></div>
 </div>
-02 SUFFERING
-<button class="prev02"> < </button>
-<button class="next02"> > </button>
+<h4>
+  02 SUFFERING
+  <div class="align-right">
+    <button class="prev02"> < </button>
+    <button class="next02"> > </button>
+  </div>
+</h4>
+<p>
 
 <div class="siema03">
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity00.jpg"></div>
@@ -51,9 +61,14 @@ title: Marks of Existence
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity05.jpg"></div>
   <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity06.jpg"></div>
 </div>
-02 NON-IDENTITY 
-<button class="prev03"> < </button>
-<button class="next03"> > </button>
+<h4>
+  03 NON-IDENTITY
+  <div class="align-right">
+    <button class="prev03"> < </button>
+    <button class="next03"> > </button>
+  </div>
+</h4>
+<p>
 
 <script src="{{ site.baseurl }}/javascripts/siema.min.js"></script>
 <script>
