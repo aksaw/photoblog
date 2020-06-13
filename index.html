@@ -1,10 +1,10 @@
 ---
 layout: default
 photos: 
-  - url: https://live.staticflickr.com/65535/49303184286_412e5943a5_b.jpg
-  - url: https://live.staticflickr.com/65535/49303395892_be3d97b9bd_b.jpg
-  - url: https://live.staticflickr.com/65535/49303184821_dbedf91511_b.jpg
-  - url: https://live.staticflickr.com/65535/49302698823_4a31599f07_b.jpg
+  - path: marks-of-existence/nonidentity04.jpg
+  - path: marks-of-existence/nonidentity03.jpg
+  - path: marks-of-existence/nonidentity02.jpg
+  - path: marks-of-existence/nonidentity01.jpg
 ---
 
 <section>
@@ -13,8 +13,8 @@ photos:
       {% for photo in page.photos %}
 
       <div class = "grid-item {{ photo.categories }}">
-        <a href="{{ photo.url }}" data-lightbox="gallery" rel="lightbox">
-          <img src="{{ photo.url }}" class="hover-fade">
+        <a href="{{ site.baseurl }}/assets/photos/{{ photo.path}}" data-lightbox="gallery" rel="lightbox">
+          <img src="{{ site.baseurl }}/assets/photos/{{ photo.path}}" class="hover-fade">
         </a>
       </div>
 
