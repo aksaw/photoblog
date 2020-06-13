@@ -6,7 +6,9 @@
   <br>
   <b>Projects</b>
   {% for post in site.posts %}
+    {% if post.id == page.id %} <i> {% endif %}
     <br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a>
+    {% if post.id == page.id %} </i> {% endif %}
   {% endfor %}
   <br><br>
   <b>Info</b>
