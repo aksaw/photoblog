@@ -75,19 +75,23 @@ title: Marks of Existence
   siema01 = new Siema({
     selector: '.siema01',
     duration: 0,
+    draggable: false,
     loop: true});
   document.querySelector('.prev01').addEventListener('click', () => siema01.prev());
   document.querySelector('.next01').addEventListener('click', () => siema01.next());
+  document.querySelector('.siema01').addEventListener('click', () => siema01.next());
   siema02 = new Siema({
     selector: '.siema02',
     duration: 0,
     loop: true});
   document.querySelector('.prev02').addEventListener('click', () => siema02.prev());
   document.querySelector('.next02').addEventListener('click', () => siema02.next());
+  document.querySelector('.siema02').addEventListener('click', () => siema02.next());
   siema03 = new Siema({
     selector: '.siema03',
     duration: 0,
     loop: true});
   document.querySelector('.prev03').addEventListener('click', () => siema03.prev());
   document.querySelector('.next03').addEventListener('click', () => siema03.next());
+  document.querySelector('.siema03').addEventListener('click', () => siema03.next());
 </script>
