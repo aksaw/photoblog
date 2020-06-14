@@ -9,13 +9,12 @@ photos:
 
 <section>
   <div class='grid'>
-
       {% for photo in page.photos %}
 
       <div class = "grid-item {{ photo.categories }}">
-        <a href="{{ site.baseurl }}/assets/photos/{{ photo.path}}" data-lightbox="gallery" rel="lightbox">
-          <img src="{{ site.baseurl }}/assets/photos/{{ photo.path}}" class="hover-fade">
-        </a>
+        <!--a href="{{ site.baseurl }}/assets/photos/{{ photo.path}}" data-lightbox="gallery" rel="lightbox"-->
+          <img src="{{ site.baseurl }}/assets/photos/{{ photo.path}}"> <!--class="hover-fade"-->
+        <!--/a-->
       </div>
 
       {% endfor %}
@@ -59,12 +58,3 @@ photos:
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.your-class').slick({
-      dots: true
-    });
-  });
-</script>
