@@ -10,13 +10,11 @@ photos:
 <section>
   <div class='grid'>
       {% for photo in page.photos %}
-
       <div class = "grid-item {{ photo.categories }}">
         <!--a href="{{ site.baseurl }}/assets/photos/{{ photo.path}}" data-lightbox="gallery" rel="lightbox"-->
           <img src="{{ site.baseurl }}/assets/photos/{{ photo.path}}"> <!--class="hover-fade"-->
         <!--/a-->
       </div>
-
       {% endfor %}
   </div>
 

@@ -2,31 +2,51 @@
 layout: post
 title: Marks of Existence
 
+photos-impermanence:
+  - path: marks-of-existence/impermanence00.jpg
+  - path: marks-of-existence/impermanence01.jpg
+  - path: marks-of-existence/impermanence02.jpg
+  - path: marks-of-existence/impermanence03.jpg
+  - path: marks-of-existence/impermanence04.jpg
+  - path: marks-of-existence/impermanence05.jpg
+  - path: marks-of-existence/impermanence06.jpg
+  - path: marks-of-existence/impermanence07.jpg
+  - path: marks-of-existence/impermanence08.jpg
+  - path: marks-of-existence/impermanence09.jpg
+  - path: marks-of-existence/impermanence10.jpg
+  - path: marks-of-existence/impermanence11.jpg
+  - path: marks-of-existence/impermanence12.jpg
+  - path: marks-of-existence/impermanence13.jpg
+
+photos-suffering:
+  - path: marks-of-existence/suffering00.jpg
+  - path: marks-of-existence/suffering01.jpg
+  - path: marks-of-existence/suffering02.jpg
+  - path: marks-of-existence/suffering03.jpg
+  - path: marks-of-existence/suffering04.jpg
+  - path: marks-of-existence/suffering05.jpg
+  - path: marks-of-existence/suffering06.jpg
+
+photos-nonidentity:
+  - path: marks-of-existence/nonidentity00.jpg
+  - path: marks-of-existence/nonidentity01.jpg
+  - path: marks-of-existence/nonidentity02.jpg
+  - path: marks-of-existence/nonidentity03.jpg
+  - path: marks-of-existence/nonidentity04.jpg
+  - path: marks-of-existence/nonidentity05.jpg
+  - path: marks-of-existence/nonidentity06.jpg
+
 # thumbnail:
-# photos: 
-#   - url: 
-#   - url: 
 # description:
 ---
 
 <div class="siema01">
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence00.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence01.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence02.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence03.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence04.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence05.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence06.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence07.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence08.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence09.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence10.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence11.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence12.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/impermanence13.jpg"></div>
+  {% for photo in page.photos-impermanence %}
+  <div><img src="{{ site.baseurl }}/assets/photos/{{ photo.path }}"></div>
+  {% endfor %}
 </div>
 <h4>
-  01 IMPERMANENCE
+  01 IMPERMANENCE | <span class="grey"> ANICCA </span>
   <div class="align-right">
     <button class="prev01"> < </button>
     <button class="next01"> > </button>
@@ -35,16 +55,12 @@ title: Marks of Existence
 <p>
 
 <div class="siema02">
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering00.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering01.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering02.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering03.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering04.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering05.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/suffering06.jpg"></div>
+  {% for photo in page.photos-suffering %}
+  <div><img src="{{ site.baseurl }}/assets/photos/{{ photo.path }}"></div>
+  {% endfor %}
 </div>
 <h4>
-  02 SUFFERING
+  02 SUFFERING | <span class="grey"> DUKKHA </span>
   <div class="align-right">
     <button class="prev02"> < </button>
     <button class="next02"> > </button>
@@ -53,16 +69,12 @@ title: Marks of Existence
 <p>
 
 <div class="siema03">
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity00.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity01.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity02.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity03.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity04.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity05.jpg"></div>
-  <div><img src="{{ site.baseurl }}/assets/photos/marks-of-existence/nonidentity06.jpg"></div>
+  {% for photo in page.photos-nonidentity %}
+  <div><img src="{{ site.baseurl }}/assets/photos/{{ photo.path }}"></div>
+  {% endfor %}
 </div>
 <h4>
-  03 NON-IDENTITY
+  03 NON-IDENTITY | <span class="grey"> ANATTĀ </span>
   <div class="align-right">
     <button class="prev03"> < </button>
     <button class="next03"> > </button>
