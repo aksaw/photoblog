@@ -302,8 +302,8 @@ button:hover {
 /* Gallery Grid */
 .grid-item {
   float: left;
-  width: 48%;
-  padding: 5px;
+  width: 47%;
+  padding: 4px;
 }
 
 /*
@@ -389,6 +389,12 @@ button:hover {
     width: 100%;
     height: auto;
     position: relative;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  section {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
