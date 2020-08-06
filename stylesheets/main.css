@@ -311,7 +311,7 @@ button:hover {
 /* Gallery Grid */
 .grid-item {
   float: left;
-  width: 48%;
+  width: 47%;
   padding-right: 8px;
   padding-bottom: 8px;
 }
