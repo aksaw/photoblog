@@ -1,16 +1,36 @@
 <header>
-  <a href="{{ site.baseurl }}/">
-    <h1 id="header">AKSHAY</h1>
-    <h1 id="header">SAWHNEY</h1>
-  </a>
+  <h1 id="header">
+    <a href="{{ site.baseurl }}/">
+      AKSHAY<br>SAWHNEY
+    </a>
+  </h1>
+  <div id="hamburger">
+    <a href="javascript:void(0);" class="icon" onclick="navExpand()">
+      <i class="material-icons md-48 align-right">menu</i>
+    </a>
+  </div>
   <br>
-  <b>Projects</b>
-  {% for post in site.posts %}
-    {% if post.id == page.id %} <i> {% endif %}
-    <br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a>
-    {% if post.id == page.id %} </i> {% endif %}
-  {% endfor %}
-  <br><br>
-  <b>Info</b>
-  <br><a href="{{ site.baseurl }}/about.html">About</a>
+
+  <div id="nav">
+    <b>Projects</b>
+    {% for post in site.posts %}
+      {% if post.id == page.id %} <i> {% endif %}
+      <br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="grey"> {{ post.subtitle }}</span> </a>
+      {% if post.id == page.id %} </i> {% endif %}
+    {% endfor %}
+    <br><br>
+    <b>Info</b>
+    <br><a href="{{ site.baseurl }}/about.html">About</a>
+  </div>
 </header>
+
+<script>
+function navExpand() {
+  var x = document.getElementById("nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>

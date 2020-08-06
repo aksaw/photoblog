@@ -24,6 +24,8 @@ h1 {
 
 #header {
   font-size: 38px;
+  display: inline-block;
+  padding-bottom: 24px;
 }
 
 p, ul, ol, pre {
@@ -77,6 +79,10 @@ header {
   margin-left: 660px;
   padding-bottom: 30px;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+header #hamburger {
+  display: none
 }
 
 section {
@@ -306,7 +312,7 @@ button:hover {
   padding: 4px;
 }
 
-/*
+
 @keyframes opacity {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -342,7 +348,7 @@ button:hover {
 .grid-item:nth-of-type(22) {animation-delay: .44s;}
 .grid-item:nth-of-type(23) {animation-delay: .46s;}
 .grid-item:nth-of-type(24) {animation-delay: .48s;}
-*/
+
 
 
 /*GALLERY GRID
@@ -395,6 +401,12 @@ button:hover {
   }
   section {
     width: 100%;
+  }
+  header #nav {
+    display: none;
+  }
+  header #hamburger {
+    display: inline;
   }
 }
 @media (max-width: 400px) {
