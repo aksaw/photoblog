@@ -1,5 +1,6 @@
 title:            AKSAW
-description:      
+author:           Akshay Sawhney
+description:      AKSAW WEBLOG
 
 url:              http://aksaw.github.io
 baseurl:          /photoblog
@@ -12,5 +13,7 @@ google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
 markdown:         kramdown
 
+plugins:
+  - jekyll-feed
 
 theme: jekyll-theme-minimal
